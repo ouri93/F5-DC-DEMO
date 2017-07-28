@@ -400,7 +400,7 @@
         "storageAccountType": "[variables('instanceTypeMap')[parameters('instanceType')].storageAccountType]",
         "newDataStorageAccountName": "[concat(uniqueString(resourceGroup().id, deployment().name), 'data000')]",
         "dataStorageAccountType": "Standard_LRS",
-        "customConfig": "[concat('### START(INPUT) CUSTOM CONFIGURATION\n##Creating Custom/Demo iApp Service...\ntmsh create ltm node demo_node fqdn { name agilitydemoweb01.westus.cloudapp.azure.com }\ntmsh create sys application service demo_http_sys template f5.http variables add { pool__addr { value 0.0.0.0 } pool__mask { value 0.0.0.0 }} tables add { pool__members { column-names { addr port } rows { { row { demo_node 80 } } }}} traffic-group none')]",
+        "customConfig": "[concat('### START(INPUT) CUSTOM CONFIGURATION\n##Creating Custom/Demo iApp Service...\ntmsh create ltm node demo_node fqdn { name agilitydemoweb01.westus.cloudapp.azure.com }\ntmsh create sys application service Agility-2017-HTTP template f5.http variables add { pool__addr { value 0.0.0.0 } pool__mask { value 0.0.0.0 }} tables add { pool__members { column-names { addr port } rows { { row { demo_node 80 } } }}} traffic-group none')]",
         "installCustomConfig": "[concat(variables('singleQuote'), '#!/bin/bash\n', variables('customConfig'), variables('singleQuote'))]"
     },
     "resources": [
