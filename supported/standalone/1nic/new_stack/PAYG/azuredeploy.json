@@ -3,7 +3,6 @@
     "contentVersion": "3.3.2.0", 
     "parameters": {
         "adminUsername": {
-            "defaultValue": "azureuser",
             "metadata": {
                 "description": "User name for the Virtual Machine."
             }, 
