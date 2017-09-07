@@ -3,7 +3,7 @@
     "contentVersion": "3.3.2.0", 
     "parameters": {
         "adminUsername": {
-            "value": "f5kcdemo"
+            "value": "azureuser"
         }, 
         "adminPassword": {
             "value": "GEN_UNIQUE"
