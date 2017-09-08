@@ -3,7 +3,7 @@
     "contentVersion": "3.3.2.0", 
     "parameters": {
         "adminUsername": {
-            "defaultValue": "azureuser", 
+            "defaultValue": "f5kcdemo", 
             "metadata": {
                 "description": "User name for the Virtual Machine."
             }, 
@@ -16,14 +16,14 @@
             "type": "securestring"
         }, 
         "dnsLabel": {
-            "defaultValue": "REQUIRED", 
+            "defaultValue": "f5kcdemo", 
             "metadata": {
                 "description": "Unique DNS Name for the Public IP address used to access the Virtual Machine"
             }, 
             "type": "string"
         }, 
         "instanceName": {
-            "defaultValue": "f5vm01", 
+            "defaultValue": "f5kcdemovm01", 
             "metadata": {
                 "description": "Name of the Virtual Machine."
             }, 
@@ -112,7 +112,7 @@
                 "200m", 
                 "1g"
             ], 
-            "defaultValue": "200m", 
+            "defaultValue": "25m", 
             "metadata": {
                 "description": "The amount of licensed bandwidth (Mbps) you want the PAYG image to use."
             }, 
@@ -129,7 +129,7 @@
                 7, 
                 8
             ], 
-            "defaultValue": 1, 
+            "defaultValue": 2, 
             "metadata": {
                 "description": "The number of public/private IP addresses you want to deploy for the application traffic (external) NIC on the BIG-IP VE to be used for virtual servers."
             }, 
