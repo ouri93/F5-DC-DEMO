@@ -3,7 +3,6 @@
     "contentVersion": "3.3.2.0", 
     "parameters": {
         "adminUsername": {
-            "defaultValue": "f5kcdemo", 
             "metadata": {
                 "description": "User name for the Virtual Machine."
             }, 
